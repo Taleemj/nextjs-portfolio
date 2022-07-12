@@ -1,0 +1,35 @@
+@import url("animate.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  scroll-behavior: smooth;
+}
+span{
+  font-family: 'Coolvetica';
+}
+p {
+  font-size: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Coolvetica";
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../public/assets/fonts/Roboto\ Light\ V2.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("../public/assets/fonts/CoolveticaRg-Regular.woff2") format("woff2");
+}
+
+

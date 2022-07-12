@@ -1,0 +1,49 @@
+.container {
+  position: relative;
+  width: 100%;
+  background-color: #121212;
+  overflow-x: hidden;
+
+  p {
+    color: #a1a1a1ff;
+  }
+  footer {
+    text-align: center;
+    margin: 0;
+    border-top: 1px solid #a1a1a1ff;
+    padding: 20px 0;
+    .icons {
+      color: #fff;
+      a {
+        color: #fff;
+        margin: 0 10px;
+        svg {
+          font-size: 18px;
+          &:hover {
+            color: #29b9f0ff;
+            transition: 0.5s;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    h4 {
+      color: #a1a1a1ff;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span,
+      svg {
+        color: #29b9f0ff;
+        font-family: "Coolvetica";
+        margin: 0 5px;
+        font-size: 20px;
+      }
+      svg {
+        box-shadow: 0 0 10px #29b9f0ff;
+      }
+    }
+  }
+}

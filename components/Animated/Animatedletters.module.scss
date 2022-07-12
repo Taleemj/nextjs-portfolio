@@ -1,0 +1,12 @@
+.textanimate {
+  min-width: 10px;
+  display: inline-block;
+
+  &:hover {
+    animation: rubberBand;
+
+    animation-duration: 1s;
+    color: #29b9f0ff;
+  }
+}
+

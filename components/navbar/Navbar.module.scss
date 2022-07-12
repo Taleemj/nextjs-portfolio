@@ -1,0 +1,145 @@
+.navcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 5px 20px;
+  //   position: fixed;
+  width: 100%;
+
+  .menu {
+    display: none;
+  }
+  .logo {
+    margin-top: 15px;
+  }
+  .linkcontainer2 {
+    display: none;
+  }
+  .linkcontainer {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    // border: 1px solid #fff;
+
+    .times {
+      display: none;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        margin-left: 15px;
+        a {
+          text-decoration: none;
+          color: #a1a1a1ff;
+          font-size: 18px;
+
+          &:hover {
+            color: #29b9f0ff;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+    .socialLinks {
+      a {
+        margin-left: 15px;
+        font-size: 20px;
+        color: #fff;
+
+        &:hover {
+          color: #29b9f0ff;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 875px) {
+  .navcontainer {
+    position: fixed;
+    z-index: 1000;
+    padding: 20px 10px 0;
+    .menu {
+      display: flex;
+      font-size: 40px;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      backdrop-filter: blur(5px);
+      z-index: -10;
+      color: #fff;
+    }
+    .linkcontainer {
+      display: none;
+    }
+    .linkcontainer2 {
+      position: absolute;
+      top: 0;
+      display: flex;
+      left: 0;
+      background-color: #000;
+      width: 100%;
+      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      .logo {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 25%;
+        text-align: center;
+        a {
+          text-decoration: none;
+
+          h6 {
+            font-size: 18px;
+            color: #29b9f0ff;
+          }
+          h5 {
+            color: #fff;
+            font-size: 30px;
+          }
+        }
+      }
+      .times {
+        display: block;
+        align-self: flex-end;
+        margin: 15px 10px;
+        font-size: 40px;
+        z-index: 1000;
+        color: #fff;
+      }
+      ul {
+        flex-direction: column;
+        margin: 25% 0 0 0;
+        width: 100%;
+        display: flex;
+        list-style: none;
+        text-align: center;
+        li {
+          margin-bottom: 50px;
+          margin-left: 15px;
+          a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+          }
+        }
+      }
+      .socialLinks {
+        a {
+          margin-bottom: 30%;
+          margin-left: 15px;
+          font-size: 20px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

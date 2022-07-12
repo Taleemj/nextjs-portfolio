@@ -1,0 +1,66 @@
+.projectscontainer {
+  margin: 0 auto;
+  width: 75%;
+  padding-top: 100px;
+
+  h1 {
+    font-size: 3rem;
+    color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 50px;
+      display: block;
+      height: 5px;
+      box-shadow: 0 0 10px #29b9f0ff;
+      background: #29b9f0ff;
+      border-radius: 10px;
+    }
+  }
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    button {
+      background: transparent;
+      border: 1px solid #29b9f0ff;
+      color: #29b9f0ff;
+      padding: 8px 16px;
+      font-size: 14px;
+      box-shadow: 0 0 5px #29b9f0ff;
+      cursor: pointer;
+      margin: 5px 10px 20px 0;
+
+      &:hover {
+        background-color: #29b9f0ff;
+        color: #fff;
+        transition: 0.5s;
+      }
+    }
+  }
+  .Projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    // overflow: hidden;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 900px) {
+  .projectscontainer {
+    width: 90%;
+    margin-top: 60px;
+    .Projects {
+      padding: 10px 0;
+      width: 100%;
+    }
+  }
+}

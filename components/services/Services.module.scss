@@ -1,0 +1,53 @@
+.servicecontainer {
+  width: 75%;
+  margin: 50px auto;
+
+  h1 {
+    font-size: 3rem;
+    color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 50px;
+      display: block;
+      height: 5px;
+      box-shadow: 0 0 10px #29b9f0ff;
+      background: #29b9f0ff;
+      border-radius: 10px;
+    }
+  }
+  .services {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .service {
+      width: 33%;
+      padding: 0 5px;
+      h4 {
+        font-size: 18px;
+        color: #29b9f0ff;
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .servicecontainer {
+    width: 90%;
+    margin: 100px auto 10px;
+    .services {
+      .service {
+        width: 100%;
+        margin: 10px 0;
+        h4 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
