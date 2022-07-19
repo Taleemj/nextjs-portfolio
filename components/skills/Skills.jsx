@@ -33,11 +33,11 @@ const Skills = () => {
         >
           <FaNodeJs />
           <h4>Backend</h4>
-          <p>Experinced with</p>
+          <p>Learning</p>
           <ul>
-            <li>Node & Express Js</li>
+            <li>Node Js</li>
+            <li>Express</li>
             <li>MongoDB</li>
-            <li>Sanity.io</li>
           </ul>
         </div>
         <div
@@ -49,6 +49,7 @@ const Skills = () => {
           <ul>
             <li>Netlify</li>
             <li>Git & GitHub</li>
+            <li>Sanity.io</li>
             <li>Vs Code</li>
           </ul>
         </div>

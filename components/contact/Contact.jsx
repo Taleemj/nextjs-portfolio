@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import styles from "./Contact.module.scss";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsPhone } from "react-icons/bs";
-// import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import AnimatedLetters from "../Animated/AnimatedLetters";
 import emailjs from '@emailjs/browser'
 
@@ -92,19 +91,17 @@ const contact = () => {
           <button type="submit">Send Message</button>
         </form>
       </div>
-      <div
-        className={`wow animate__animated animate__slideInRight ${styles.mapcontainer}`}
-      >
-        {/* <Map center={[4.845927, 31.589679]} zoom={13}>
-          {({ TileLayer, Marker, Popup }) => (
-            <>
-              <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-              <Marker position={[4.845927, 31.589679]}>
-                <Popup>yeah I live here, come over for a visit :)</Popup>
-              </Marker>
-            </>
-          )}
-        </Map> */}
+      <div id="map" className={`${styles.mapcontainer}`}>
+        {/* <MyMap /> */}
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127214.99526429594!2d31.507148115759183!3d4.860858837405124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1712804abcf3b5f9%3A0xd89839286346c433!2sJuba%2C%20South%20Sudan!5e0!3m2!1sen!2s!4v1658053178453!5m2!1sen!2s"
+          width="100%"
+          height="100%"
+          allowfullscreen=""
+          loading="lazy"
+          className={"wow animate__animated animate__slideInRight "}
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
   );

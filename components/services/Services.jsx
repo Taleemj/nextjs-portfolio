@@ -15,8 +15,7 @@ const Services = () => {
         <div className={styles.service}>
           <h4>Web Developerment</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, sunt
-            earum in debitis atque eum eius adipisci! Nam, officia ipsam?
+            
           </p>
         </div>
         <div className={styles.service}>
