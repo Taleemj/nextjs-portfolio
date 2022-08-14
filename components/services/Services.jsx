@@ -8,30 +8,23 @@ const Services = () => {
   return (
     <div className={styles.servicecontainer}>
       <h1>
-
-      <AnimatedLetters wordArray={servicearr} idx={4} />
+        <AnimatedLetters wordArray={servicearr} idx={4} />
       </h1>
       <div className={styles.services}>
         <div className={styles.service}>
+        </div>
+        <div className={styles.service}>
           <h4>Web Developerment</h4>
           <p>
-            
+            Develop a variety of websites ranging from simple satic pages using
+            html and css to complex web applications using react next js.
           </p>
         </div>
         <div className={styles.service}>
           <h4>Responsive design</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            blanditiis vitae totam esse accusamus beatae animi eius dolore unde
-            cum.
-          </p>
-        </div>
-        <div className={styles.service}>
-          <h4>FullStack Development</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quam
-            voluptas veritatis similique repellat excepturi exercitationem,
-            totam eveniet qui vero!
+            Create websites that are responsible to any device screen size, from
+            desktop to tablets and mobile phones.
           </p>
         </div>
       </div>

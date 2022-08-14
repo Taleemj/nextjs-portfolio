@@ -57,9 +57,10 @@
     .skillscontainer {
       width: 100%;
       align-items: flex-start;
+      justify-content: space-between;
       div {
         height: auto;
-        width: auto;
+        width: 35%;
       }
     }
   }

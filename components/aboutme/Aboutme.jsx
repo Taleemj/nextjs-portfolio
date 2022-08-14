@@ -29,8 +29,8 @@ const Aboutme = () => {
             <span style={{ color: "#29b9f0ff" }}> opportunities</span>. I build
             websites that delight and inform and try give it my all.
           </p>
-          <a href="/">
-          <button className="wow animate__animated animate__fadeInUp">
+          <a href="#aboutme">
+          <button onClick={()=> alert("sorry my cv isn't available at the moment.")} className="wow animate__animated animate__fadeInUp">
             Download CV
           </button>
           </a>
