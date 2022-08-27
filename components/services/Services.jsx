@@ -12,8 +12,6 @@ const Services = () => {
       </h1>
       <div className={styles.services}>
         <div className={styles.service}>
-        </div>
-        <div className={styles.service}>
           <h4>Web Developerment</h4>
           <p>
             Develop a variety of websites ranging from simple satic pages using

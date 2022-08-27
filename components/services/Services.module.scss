@@ -22,12 +22,12 @@
   }
   .services {
     display: flex;
-    width: 100%;
+    width: 80%;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: row;
     .service {
-      width: 33%;
+      width: 50%;
       padding: 0 5px;
       h4 {
         font-size: 18px;
@@ -41,9 +41,12 @@
     width: 90%;
     margin: 100px auto 10px;
     .services {
+      flex-direction: column;
+      width: 100%;
       .service {
         width: 100%;
-        margin: 10px 0;
+        margin: 18px 0;
+        padding: 0;
         h4 {
           font-size: 20px;
         }
