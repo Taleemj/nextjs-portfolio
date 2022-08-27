@@ -5,7 +5,7 @@ import { BsPhone } from "react-icons/bs";
 import AnimatedLetters from "../Animated/AnimatedLetters";
 import emailjs from '@emailjs/browser'
 
-const contact = () => {
+const Contact = () => {
   const nameref = useRef();
   const subjectref = useRef();
   const emailref = useRef();
@@ -106,4 +106,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;

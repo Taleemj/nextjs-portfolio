@@ -12,7 +12,7 @@ const Skills = () => {
         <AnimatedLetters wordArray={titlearr} idx={3} />
       </h1>
       <p className="wow animate__animated animate__fadeInUp">
-        I've worked with a wide range of<span>web development</span>
+        I&apos;ve worked with a wide range of<span>web development</span>
         Technologies.From frontend and design to backend.
       </p>
       <div className={styles.skillscontainer}>

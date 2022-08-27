@@ -44,7 +44,7 @@ const Header = () => {
                   I
                 </span>
                 <span className={`animate__animated animate__bounceIn ${styles.textanimate}`}>
-                  'm
+                  &apos;m
                 </span>
               </span>
               <span className={styles.firstletter}>T</span>
