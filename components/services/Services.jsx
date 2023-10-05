@@ -7,15 +7,24 @@ const Services = () => {
 
   return (
     <div className={styles.servicecontainer}>
-      <h1>
+      <h1 className="wow animate__animated animate__fadeInUp">
         <AnimatedLetters wordArray={servicearr} idx={4} />
       </h1>
-      <div className={styles.services}>
+      <div
+        className={`wow animate__animated animate__fadeInUp ${styles.services}`}
+      >
         <div className={styles.service}>
-          <h4>Web Developerment</h4>
+          <h4>Web Development</h4>
           <p>
             Develop a variety of websites ranging from simple satic pages using
             html and css to complex web applications using react next js.
+          </p>
+        </div>
+        <div className={styles.service}>
+          <h4>App Development</h4>
+          <p>
+            Create mobile cross-platform (ios & andriod) apps using react native
+            and the expo CLI for easy and fast development.
           </p>
         </div>
         <div className={styles.service}>

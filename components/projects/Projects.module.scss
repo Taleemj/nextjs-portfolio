@@ -27,15 +27,12 @@
     align-items: center;
     justify-content: center;
     button {
-      background: transparent;
       border: 1px solid #29b9f0ff;
-      color: #29b9f0ff;
       padding: 8px 16px;
       font-size: 14px;
       box-shadow: 0 0 5px #29b9f0ff;
       cursor: pointer;
       margin: 5px 10px 20px 0;
-
       &:hover {
         background-color: #29b9f0ff;
         color: #fff;

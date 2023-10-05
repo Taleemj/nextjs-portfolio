@@ -22,34 +22,56 @@ const Header = () => {
     "e",
     "r",
   ];
-  const titlearr = ['W','e','b',' ','D','e','v','e','l','o','p','e','r']
+  const titlearr = [
+    "W",
+    "e",
+    "b",
+    " ",
+    "D",
+    "e",
+    "v",
+    "e",
+    "l",
+    "o",
+    "p",
+    "e",
+    "r",
+  ];
   return (
     <>
       <Navbar />
-      <div id="header" className={styles.headercontainer}>
+      <div id="hero" className={styles.headercontainer}>
         <div className={styles.hero}>
           <div className={`${styles.herotext}`}>
-            <h1 className="wow animate__animated animate__fadeInUp">
-              <span className={styles.firstspan}>
-                <span
-                  className={`animate__animated animate__bounceIn ${styles.textanimate}`}
-                >
-                  H
+            <strong>
+              <h1 className="wow animate__animated animate__fadeInUp">
+                <span className={styles.firstspan}>
+                  <span
+                    className={`animate__animated animate__bounceIn ${styles.textanimate}`}
+                  >
+                    H
+                  </span>
+                  <span
+                    className={`animate__animated animate__bounceIn ${styles.textanimate}`}
+                  >
+                    i,
+                  </span>
+                  <br />
+                  <span
+                    className={`animate__animated animate__bounceIn ${styles.textanimate}`}
+                  >
+                    I
+                  </span>
+                  <span
+                    className={`animate__animated animate__bounceIn ${styles.textanimate}`}
+                  >
+                    &apos;m
+                  </span>
                 </span>
-                <span className={`animate__animated animate__bounceIn ${styles.textanimate}`}>
-                  i,
-                </span>
-                <br />
-                <span className={`animate__animated animate__bounceIn ${styles.textanimate}`}>
-                  I
-                </span>
-                <span className={`animate__animated animate__bounceIn ${styles.textanimate}`}>
-                  &apos;m
-                </span>
-              </span>
-              <span className={styles.firstletter}>T</span>
-              <AnimatedLetters wordArray={nameArry} idx={3} />
-            </h1>
+                <span className={styles.firstletter}>T</span>
+                <AnimatedLetters wordArray={nameArry} idx={3} />
+              </h1>
+            </strong>
             <h2 className="wow animate__animated animate__fadeInUp">
               <AnimatedLetters wordArray={titlearr} idx={3} />
             </h2>

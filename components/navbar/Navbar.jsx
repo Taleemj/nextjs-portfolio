@@ -1,18 +1,33 @@
-import react, { useState } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { SiUpwork } from "react-icons/si";
-import { BsFacebook, BsLinkedin } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 import { FaGithub, FaTimes } from "react-icons/fa";
 import styles from "./Navbar.module.scss";
-import Image from "next/image";
-import logo from "../../public/assets/tm.png";
+import logo from "../../assets/tm.png";
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrollTop, setScrollTop] = useState(0);
+  const [navClass, setNavClass] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      setScrollTop(document.documentElement.scrollTop);
+      scrollTop > 400 ? setNavClass(true) : setNavClass(false);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollTop]);
+
   return (
-    <div className={styles.navcontainer}>
+    <div className={navClass ? styles.navbar : styles.navcontainer}>
       <div className={styles.logo}>
-        <a href="#__next">
-          <Image src={logo} alt="TM" width="60px" height="60px" />
+        <a href="#hero">
+          <img src={logo} alt="TM" width="60px" height="60px" />
         </a>
       </div>
       <div className={styles.linkcontainer}>
@@ -22,6 +37,15 @@ const Navbar = () => {
           </li>
           <li>
             <a href="#skills">Technologies</a>
+          </li>
+          <li>
+            <a
+              href="https://thedeveloperblog.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Blog
+            </a>
           </li>
           <li>
             <a href="#aboutme">About Me</a>
@@ -41,16 +65,6 @@ const Navbar = () => {
           <a href="https://github.com/Taleemj" target="_blank" rel="noreferrer">
             <FaGithub />
           </a>
-          <a
-            href="https://web.facebook.com/taleem22"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <BsFacebook />
-          </a>
-          <a href="#">
-            <SiUpwork />
-          </a>
         </div>
       </div>
 
@@ -62,8 +76,8 @@ const Navbar = () => {
           <FaTimes />
         </div>
         <div className={styles.logo}>
-          <a href="#__next">
-            <Image
+          <a href="#hero">
+            <img
               src={logo}
               alt="TM"
               onClick={() => setMenuOpen(false)}
@@ -82,6 +96,15 @@ const Navbar = () => {
             <a href="#skills">Technologies</a>
           </li>
           <li>
+            <a
+              href="https://thedeveloperblog.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Blog
+            </a>
+          </li>
+          <li>
             <a href="#aboutme">About Me</a>
           </li>
           <li>
@@ -98,16 +121,6 @@ const Navbar = () => {
           </a>
           <a href="https://github.com/Taleemj" target="_blank" rel="noreferrer">
             <FaGithub />
-          </a>
-          <a
-            href="https://web.facebook.com/taleem22"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <BsFacebook />
-          </a>
-          <a href="" target="_blank" rel="noreferrer">
-            <SiUpwork />
           </a>
         </div>
       </div>
