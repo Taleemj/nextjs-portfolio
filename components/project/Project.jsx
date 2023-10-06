@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Project.module.scss";
+import Image from "next/image";
 
 const Project = ({ title, description, codeLink, demoLink, img, tag }) => {
   return (
@@ -7,7 +8,7 @@ const Project = ({ title, description, codeLink, demoLink, img, tag }) => {
       className={`wow animate__animated animate__fadeInUp ${styles.singleProject}`}
     >
       <div className={styles.img}>
-        <img src={`/${img}`} loading="lazy" alt={title} />
+        <Image src={`/${img}`} alt={title} width={300} height={150} />
       </div>
       <h4>{title}</h4>
       <p>{description}</p>

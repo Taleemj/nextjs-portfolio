@@ -13,7 +13,7 @@
     }
   }
   h4 {
-    color: #29b9f0ff;
+    color: var(--cyan);
     margin: 10px 0 20px 0;
     position: relative;
     &::after {
@@ -50,14 +50,14 @@
     width: 85%;
     margin: 10px auto 0;
     button {
-      background-color: #29b9f0ff;
+      background-color: var(--cyan);
       border: none;
-      border: 1px solid #29b9f0ff;
+      border: 1px solid var(--cyan);
       outline: none;
       padding: 5px 10px;
       color: #fff;
       border-radius: 10px;
-      box-shadow: 0 0 10px #29b9f0ff;
+      box-shadow: 0 0 10px var(--cyan);
       cursor: pointer;
     }
   }

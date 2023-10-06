@@ -26,7 +26,7 @@
         svg {
           font-size: 18px;
           margin-right: 2px;
-          color: #29b9f0ff;
+          color: var(--cyan);
         }
       }
     }
@@ -43,8 +43,8 @@
         width: 50px;
         display: block;
         height: 5px;
-        box-shadow: 0 0 10px #29b9f0ff;
-        background: #29b9f0ff;
+        box-shadow: 0 0 10px var(--cyan);
+        background: var(--cyan);
         border-radius: 10px;
       }
     }
@@ -69,7 +69,7 @@
             background-color: rgb(41, 41, 41);
             color: #fff;
             &:focus {
-              border-bottom: 2px solid #29b9f0ff;
+              border-bottom: 2px solid var(--red);
             }
           }
         }
@@ -84,7 +84,7 @@
         color: #fff;
         position: relative;
         &:focus {
-          border-bottom: 2px solid #29b9f0ff;
+          border-bottom: 2px solid var(--red);
         }
       }
       textarea {
@@ -97,23 +97,25 @@
         padding: 10px;
         color: #fff;
         &:focus {
-          border-bottom: 2px solid #29b9f0ff;
+          border-bottom: 2px solid var(--red);
         }
       }
       button {
-        border: 1px solid #29b9f0ff;
+        border: 1px solid var(--cyan);
         background: transparent;
         outline: none;
         width: 200px;
         padding: 10px 20px;
         align-self: flex-end;
-        color: #29b9f0ff;
+        color: var(--cyan);
         font-size: 18px;
         cursor: pointer;
         margin-top: 10px;
-        box-shadow: 0 0 10px #29b9f0ff;
+        box-shadow: 0 0 10px var(--cyan);
         &:hover {
-          background-color: #29b9f0ff;
+          background-color: var(--red);
+          box-shadow: 0 0 10px var(--red);
+          border: 1px solid var(--red);
           color: #fff;
           transition: 0.5s;
         }

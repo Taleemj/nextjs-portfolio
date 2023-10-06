@@ -38,7 +38,7 @@
           font-size: 18px;
 
           &:hover {
-            color: #29b9f0ff;
+            color: var(--red);
             transition: 0.5s;
           }
         }
@@ -51,7 +51,7 @@
         color: #fff;
 
         &:hover {
-          color: #29b9f0ff;
+          color: var(--red);
           transition: 0.5s;
         }
       }
@@ -102,7 +102,7 @@
           font-size: 18px;
 
           &:hover {
-            color: #29b9f0ff;
+            color: var(--red);
             transition: 0.5s;
           }
         }
@@ -115,7 +115,7 @@
         color: #fff;
 
         &:hover {
-          color: #29b9f0ff;
+          color: var(--red);
           transition: 0.5s;
         }
       }
@@ -165,7 +165,7 @@
 
           h6 {
             font-size: 18px;
-            color: #29b9f0ff;
+            color: var(--cyan);
           }
           h5 {
             color: #fff;
@@ -250,7 +250,7 @@
 
           h6 {
             font-size: 18px;
-            color: #29b9f0ff;
+            color: var(--cyan);
           }
           h5 {
             color: #fff;

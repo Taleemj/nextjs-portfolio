@@ -25,7 +25,7 @@ export default function CustomGlobe() {
       atmosphereColor={"cyan"}
       atmosphereAltitude={0.23}
       hexPolygonMargin={0.62}
-      hexPolygonColor={useCallback(() => "#29b9f0ff", [])}
+      hexPolygonColor={useCallback(() => "var(--cyan)", [])}
     />
   );
 }

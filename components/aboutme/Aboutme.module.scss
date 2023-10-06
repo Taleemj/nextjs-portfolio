@@ -15,9 +15,9 @@
       left: 0;
       width: 50px;
       display: block;
-      box-shadow: 0 0 10px #29b9f0ff;
+      box-shadow: 0 0 10px var(--cyan);
       height: 5px;
-      background: #29b9f0ff;
+      background: var(--cyan);
       border-radius: 10px;
     }
   }
@@ -31,19 +31,20 @@
       button {
         width: 180px;
         margin-top: 30px;
-        border: 1px solid #29b9f0ff;
+        border: 1px solid var(--cyan);
         padding: 10px 20px;
-        background: #29b9f0ff;
-        box-shadow: 0 0 10px #29b9f0ff;
+        background: var(--cyan);
+        box-shadow: 0 0 10px var(--cyan);
         outline: none;
         font-size: 20px;
         color: #fff;
         cursor: pointer;
         &:hover {
-          background-color: #2f71e8ff;
+          background-color: var(--red);
           color: #fff;
           transition: 0.5s;
-          border: 1px solid #2f71e8ff;
+          border: 1px solid var(--red);
+          box-shadow: 0 0 10px var(--red);
         }
       }
     }

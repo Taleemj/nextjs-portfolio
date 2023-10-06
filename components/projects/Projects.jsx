@@ -28,8 +28,12 @@ const Projects = () => {
       >
         <button
           style={{
-            backgroundColor: `${active === 0 ? "#29b9f0ff" : "transparent"}`,
-            color: `${active === 0 ? "#fff" : "#29b9f0ff"}`,
+            backgroundColor: `${active === 0 ? "var(--red)" : "transparent"}`,
+            color: `${active === 0 ? "#fff" : "var(--cyan)"}`,
+            borderColor: `${active === 0 ? "var(--red)" : "var(--cyan)"}`,
+            boxShadow: `${
+              active === 0 ? "0 0 5px var(--red)" : "0 0 5px var(--cyan)"
+            }`,
           }}
           onClick={() => filterProjects(works, 0)}
         >
@@ -37,8 +41,12 @@ const Projects = () => {
         </button>
         <button
           style={{
-            backgroundColor: `${active === 1 ? "#29b9f0ff" : "transparent"}`,
-            color: `${active === 1 ? "#fff" : "#29b9f0ff"}`,
+            backgroundColor: `${active === 1 ? "var(--red)" : "transparent"}`,
+            color: `${active === 1 ? "#fff" : "var(--cyan)"}`,
+            borderColor: `${active === 1 ? "var(--red)" : "var(--cyan)"}`,
+            boxShadow: `${
+              active === 1 ? "0 0 5px var(--red)" : "0 0 5px var(--cyan)"
+            }`,
           }}
           onClick={() => filterProjects(htmlcss, 1)}
         >
@@ -46,8 +54,12 @@ const Projects = () => {
         </button>
         <button
           style={{
-            backgroundColor: `${active === 2 ? "#29b9f0ff" : "transparent"}`,
-            color: `${active === 2 ? "#fff" : "#29b9f0ff"}`,
+            backgroundColor: `${active === 2 ? "var(--red)" : "transparent"}`,
+            color: `${active === 2 ? "#fff" : "var(--cyan)"}`,
+            borderColor: `${active === 2 ? "var(--red)" : "var(--cyan)"}`,
+            boxShadow: `${
+              active === 2 ? "0 0 5px var(--red)" : "0 0 5px var(--cyan)"
+            }`,
           }}
           onClick={() => filterProjects(reactapis, 2)}
         >
@@ -55,8 +67,12 @@ const Projects = () => {
         </button>
         <button
           style={{
-            backgroundColor: `${active === 3 ? "#29b9f0ff" : "transparent"}`,
-            color: `${active === 3 ? "#fff" : "#29b9f0ff"}`,
+            backgroundColor: `${active === 3 ? "var(--red)" : "transparent"}`,
+            color: `${active === 3 ? "#fff" : "var(--cyan)"}`,
+            borderColor: `${active === 3 ? "var(--red)" : "var(--cyan)"}`,
+            boxShadow: `${
+              active === 3 ? "0 0 5px var(--red)" : "0 0 5px var(--cyan)"
+            }`,
           }}
           onClick={() => filterProjects(fullstack, 3)}
         >

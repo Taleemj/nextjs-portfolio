@@ -15,8 +15,8 @@
       width: 50px;
       display: block;
       height: 5px;
-      box-shadow: 0 0 10px #29b9f0ff;
-      background: #29b9f0ff;
+      box-shadow: 0 0 10px var(--cyan);
+      background: var(--cyan);
       border-radius: 10px;
     }
   }
@@ -31,7 +31,7 @@
       padding: 0 5px;
       h4 {
         font-size: 18px;
-        color: #29b9f0ff;
+        color: var(--cyan);
       }
     }
   }

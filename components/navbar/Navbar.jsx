@@ -3,7 +3,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub, FaTimes } from "react-icons/fa";
 import styles from "./Navbar.module.scss";
-import logo from "../../assets/tm.png";
+import Image from "next/image";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,7 +27,7 @@ const Navbar = () => {
     <div className={navClass ? styles.navbar : styles.navcontainer}>
       <div className={styles.logo}>
         <a href="#hero">
-          <img src={logo} alt="TM" width="60px" height="60px" />
+          <Image src={"/assets/tm.png"} alt="TM" width={60} height={60} />
         </a>
       </div>
       <div className={styles.linkcontainer}>
@@ -77,12 +77,12 @@ const Navbar = () => {
         </div>
         <div className={styles.logo}>
           <a href="#hero">
-            <img
-              src={logo}
+            <Image
+              src={"/assets/tm.png"}
               alt="TM"
               onClick={() => setMenuOpen(false)}
-              width="60px"
-              height="60px"
+              width={60}
+              height={60}
             />
             <h5>Taleem</h5>
             <h6>Web Developer</h6>

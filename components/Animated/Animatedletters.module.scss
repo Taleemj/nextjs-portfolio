@@ -4,9 +4,15 @@
 
   &:hover {
     animation: rubberBand;
-
-    animation-duration: 1s;
-    color: #29b9f0ff;
+    // background: radial-gradient(
+    //   circle farthest-corner at center center,
+    //   var(--red) 50%,
+    //   var(--cyan) 100%
+    // );
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // animation-duration: 1s;
+    color: var(--red);
   }
 }
-
