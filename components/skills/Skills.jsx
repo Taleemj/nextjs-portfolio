@@ -3,22 +3,28 @@ import styles from "./Skills.module.scss";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { DiGit } from "react-icons/di";
 import AnimatedLetters from "../Animated/AnimatedLetters";
+import { RevealWrapper } from "next-reveal";
 
 const Skills = () => {
   const titlearr = ["T", "e", "c", "h", "n", "o", "l", "o", "g", "i", "e", "s"];
   return (
     <div id="skills" className={styles.skills}>
-      <h1 className="wow animate__animated animate__fadeInUp">
-        <AnimatedLetters wordArray={titlearr} idx={3} />
-      </h1>
-      <p className="wow animate__animated animate__fadeInUp">
-        I&apos;ve worked with a wide range of
-        <span>web & mobile development</span>
-        Technologies.From frontend and design to backend.
-      </p>
-      <div className={styles.skillscontainer}>
+      <RevealWrapper reset={true}>
+        <h1 className="animate__animated animate__fadeInUp">
+          <AnimatedLetters wordArray={titlearr} idx={3} />
+        </h1>
+      </RevealWrapper>
+      <RevealWrapper reset={true}>
+        <p className="animate__animated animate__fadeInUp">
+          I&apos;ve worked with a wide range of
+          <span>web & mobile development</span>
+          Technologies.From frontend and design to backend.
+        </p>
+      </RevealWrapper>
+
+      <RevealWrapper className={styles.skillscontainer} reset={true}>
         <div
-          className={`wow animate__animated animate__fadeInUp ${styles.frontend}`}
+          className={`animate__animated animate__fadeInUp ${styles.frontend}`}
         >
           <FaNodeJs />
           <h4>Web Development</h4>
@@ -30,7 +36,7 @@ const Skills = () => {
           </ul>
         </div>
         <div
-          className={`wow animate__animated animate__fadeInUp ${styles.backend}`}
+          className={`animate__animated animate__fadeInUp ${styles.backend}`}
         >
           <FaReact />
           <h4>Learning</h4>
@@ -41,9 +47,7 @@ const Skills = () => {
             <li>Node / Express Js</li>
           </ul>
         </div>
-        <div
-          className={`wow animate__animated animate__fadeInUp ${styles.tools}`}
-        >
+        <div className={`animate__animated animate__fadeInUp ${styles.tools}`}>
           <DiGit />
           <h4>Tools</h4>
           <p>Worked with</p>
@@ -54,7 +58,7 @@ const Skills = () => {
             <li>Vs Code</li>
           </ul>
         </div>
-      </div>
+      </RevealWrapper>
     </div>
   );
 };
