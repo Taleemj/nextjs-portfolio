@@ -1,16 +1,5 @@
 export const works = [
   {
-    id: 15,
-    title: "MovieHub DB (MHDB)",
-    description:
-      "MovieHub (MHDB) is a database for movies and TV shows. Where you can discover and learn more about movies, TV shows and tv stars.",
-    tag: ["NextJs", "SCSS", "Api"],
-    codeLink: "https://github.com/Taleemj/Moviehub2.0",
-    demoLink: "https://moviehubdb.vercel.app/",
-    img: "mhdb.png",
-    category: "reactapis",
-  },
-  {
     id: 14,
     title: "The store (Amazon Clone)",
     description:
