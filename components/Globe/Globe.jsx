@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect, useState, useRef, useCallback } from "react";
 import HEX_DATA from "./data/countries_hex_data.json";
 import Globe from "react-globe.gl";

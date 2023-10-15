@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Animatedletters.module.scss";
 import "animate.css";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "../navbar/Navbar";
 import styles from "./Header.module.scss";
 import { AiFillHtml5 } from "react-icons/ai";

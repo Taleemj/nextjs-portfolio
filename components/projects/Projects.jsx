@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import styles from "./Projects.module.scss";
 import { works } from "../project/Projects";

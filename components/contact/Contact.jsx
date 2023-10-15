@@ -1,3 +1,4 @@
+"use client";
 import { useRef } from "react";
 import styles from "./Contact.module.scss";
 import { AiOutlineMail } from "react-icons/ai";

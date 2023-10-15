@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Aboutme.module.scss";
 import AnimatedLetters from "../Animated/AnimatedLetters";
 import Image from "next/image";

@@ -1,4 +1,3 @@
-import React from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";

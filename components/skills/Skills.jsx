@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Skills.module.scss";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { DiGit } from "react-icons/di";
