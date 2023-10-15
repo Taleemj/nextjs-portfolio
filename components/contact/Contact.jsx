@@ -41,8 +41,8 @@ const Contact = () => {
           <AnimatedLetters wordArray={titlearr} idx={3} />
         </h1>
         <p className="wow animate__animated animate__fadeInUp">
-          Leave me a message if you're looking for web development services or
-          just say hii &#128075;.
+          Leave me a message if you&apos;re looking for web development services
+          or just say hii &#128075;.
         </p>
         <div className={`${styles.contactinfo}`}>
           <div className="email">
