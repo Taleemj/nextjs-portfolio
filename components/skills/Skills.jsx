@@ -2,26 +2,26 @@ import styles from "./Skills.module.scss";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { DiGit } from "react-icons/di";
 import AnimatedLetters from "../Animated/AnimatedLetters";
-import { RevealWrapper } from "next-reveal";
+import RevealIt from "../RevealIt";
 
 const Skills = () => {
   const titlearr = ["T", "e", "c", "h", "n", "o", "l", "o", "g", "i", "e", "s"];
   return (
     <div id="skills" className={styles.skills}>
-      <RevealWrapper reset={true}>
+      <RevealIt>
         <h1 className="animate__animated animate__fadeInUp">
           <AnimatedLetters wordArray={titlearr} idx={3} />
         </h1>
-      </RevealWrapper>
-      <RevealWrapper reset={true}>
+      </RevealIt>
+      <RevealIt>
         <p className="animate__animated animate__fadeInUp">
           I&apos;ve worked with a wide range of
           <span>web & mobile development</span>
           Technologies.From frontend and design to backend.
         </p>
-      </RevealWrapper>
+      </RevealIt>
 
-      <RevealWrapper className={styles.skillscontainer} reset={true}>
+      <RevealIt className={styles.skillscontainer} reset={true}>
         <div
           className={`animate__animated animate__fadeInUp ${styles.frontend}`}
         >
@@ -57,7 +57,7 @@ const Skills = () => {
             <li>Vs Code</li>
           </ul>
         </div>
-      </RevealWrapper>
+      </RevealIt>
     </div>
   );
 };

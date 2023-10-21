@@ -5,7 +5,7 @@ import { works } from "../project/Projects";
 import Project from "../project/Project";
 import "animate.css";
 import AnimatedLetters from "../Animated/AnimatedLetters";
-import { RevealWrapper } from "next-reveal";
+import RevealIt from "../RevealIt";
 
 const Projects = () => {
   const htmlcss = works.filter((item) => item.category === "htmlcss");
@@ -22,12 +22,12 @@ const Projects = () => {
 
   return (
     <div id="projects" className={styles.projectscontainer}>
-      <RevealWrapper reset={true}>
+      <RevealIt>
         <h1 className="animate__animated animate__fadeInUp">
           <AnimatedLetters wordArray={titlearr} idx={3} />
         </h1>
-      </RevealWrapper>
-      <RevealWrapper reset={true}>
+      </RevealIt>
+      <RevealIt>
         <div
           className={`animate__animated animate__fadeInUp delay-1s ${styles.filters}`}
         >
@@ -84,7 +84,7 @@ const Projects = () => {
             FULLSTACK ({fullstack.length})
           </button>
         </div>
-      </RevealWrapper>
+      </RevealIt>
       <div className={styles.Projects}>
         {filtered.map((item) => (
           <Project

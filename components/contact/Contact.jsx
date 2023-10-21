@@ -5,7 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsPhone } from "react-icons/bs";
 import AnimatedLetters from "../Animated/AnimatedLetters";
 import emailjs from "@emailjs/browser";
-import { RevealWrapper } from "next-reveal";
+import RevealIt from "../RevealIt";
 
 const Contact = () => {
   const nameref = useRef();
@@ -35,7 +35,7 @@ const Contact = () => {
       .catch((err) => alert("something went wrong try again"));
   };
   return (
-    <RevealWrapper reset={true}>
+    <RevealIt>
       <div id="contact" className={styles.contactme}>
         <div className={styles.info}>
           <h1 className="wow animate__animated animate__fadeInUp">
@@ -93,14 +93,8 @@ const Contact = () => {
             <button type="submit">Send Message</button>
           </form>
         </div>
-        {/* <div
-        id="map"
-        className={`wow animate__animated animate__fadeInUp ${styles.mapcontainer}`}
-      >
-        <CustomGlobe />
-      </div> */}
       </div>
-    </RevealWrapper>
+    </RevealIt>
   );
 };
 

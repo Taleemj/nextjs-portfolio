@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";

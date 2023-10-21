@@ -1,11 +1,11 @@
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
-import { RevealWrapper } from "next-reveal";
+import RevealIt from "./RevealIt";
 
 const Footer = ({ styles }) => {
   return (
-    <RevealWrapper reset={true}>
+    <RevealIt>
       <footer className={styles.footer}>
         <div className={styles.icons}>
           <a
@@ -24,7 +24,7 @@ const Footer = ({ styles }) => {
           {new Date().getFullYear()}
         </h4>
       </footer>
-    </RevealWrapper>
+    </RevealIt>
   );
 };
 

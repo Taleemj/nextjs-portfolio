@@ -1,20 +1,20 @@
 import styles from "./Aboutme.module.scss";
 import AnimatedLetters from "../Animated/AnimatedLetters";
 import Image from "next/image";
-import { RevealWrapper } from "next-reveal";
+import RevealIt from "../RevealIt";
 
-const Aboutme = () => {
+const Aboutme = async () => {
   const titlearr = ["A", "b", "o", "u", "t", " ", "M", "e"];
   return (
     <div id="aboutme" className={styles.about}>
-      <RevealWrapper reset={true}>
+      <RevealIt>
         <strong>
           <h1 className="wow animate__animated animate__fadeInUp">
             <AnimatedLetters wordArray={titlearr} idx={3} />
           </h1>
         </strong>
-      </RevealWrapper>
-      <RevealWrapper reset={true}>
+      </RevealIt>
+      <RevealIt>
         <div className={styles.aboutcontainer}>
           <div className={styles.txt}>
             <p className="wow animate__animated animate__fadeInUp">
@@ -55,7 +55,7 @@ const Aboutme = () => {
             />
           </div>
         </div>
-      </RevealWrapper>
+      </RevealIt>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import { AiFillHtml5 } from "react-icons/ai";
 import { FaReact, FaNodeJs, FaCss3Alt, FaSass } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import AnimatedLetters from "../Animated/AnimatedLetters";
-import { RevealWrapper } from "next-reveal";
+import RevealIt from "../RevealIt";
 
 const Header = () => {
   const nameArry = [
@@ -43,7 +43,7 @@ const Header = () => {
       <div id="hero" className={styles.headercontainer}>
         <div className={styles.hero}>
           <div className={`${styles.herotext}`}>
-            <RevealWrapper reset={true}>
+            <RevealIt>
               <strong>
                 <h1 className="animate__animated animate__fadeInUp">
                   <span className={styles.firstspan}>
@@ -73,20 +73,20 @@ const Header = () => {
                   <AnimatedLetters wordArray={nameArry} idx={3} />
                 </h1>
               </strong>
-            </RevealWrapper>
-            <RevealWrapper reset={true}>
+            </RevealIt>
+            <RevealIt>
               <h2 className="animate__animated animate__fadeInUp">
                 <AnimatedLetters wordArray={titlearr} idx={3} />
               </h2>
-            </RevealWrapper>
-            <RevealWrapper reset={true}>
+            </RevealIt>
+            <RevealIt>
               <p className="animate__animated animate__fadeInUp">
                 Front End, I creates beautiful and informative websites that
                 help users with what they are looking for.
               </p>
-            </RevealWrapper>
+            </RevealIt>
 
-            <RevealWrapper reset={true}>
+            <RevealIt>
               <div
                 className={`animate__animated animate__fadeInUp ${styles.buttons}`}
               >
@@ -94,7 +94,7 @@ const Header = () => {
 
                 <a href="#contact">Contact me!</a>
               </div>
-            </RevealWrapper>
+            </RevealIt>
           </div>
           <div className={`animate__animated animate__fadeIn ${styles.cube}`}>
             <div className={styles.cubespinner}>

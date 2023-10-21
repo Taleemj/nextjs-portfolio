@@ -1,10 +1,10 @@
 import styles from "./Project.module.scss";
 import Image from "next/image";
-import { RevealWrapper } from "next-reveal";
+import RevealIt from "../RevealIt";
 
 const Project = ({ title, description, codeLink, demoLink, img, tag }) => {
   return (
-    <RevealWrapper reset={true}>
+    <RevealIt>
       <div
         className={`animate__animated animate__fadeInUp ${styles.singleProject}`}
       >
@@ -35,7 +35,7 @@ const Project = ({ title, description, codeLink, demoLink, img, tag }) => {
           </a>
         </div>
       </div>
-    </RevealWrapper>
+    </RevealIt>
   );
 };
 
