@@ -21,7 +21,7 @@ const Skills = () => {
         </p>
       </RevealIt>
 
-      <RevealIt className={styles.skillscontainer} reset={true}>
+      <RevealIt styles={styles.skillscontainer}>
         <div
           className={`animate__animated animate__fadeInUp ${styles.frontend}`}
         >
