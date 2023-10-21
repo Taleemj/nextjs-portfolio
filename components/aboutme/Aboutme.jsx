@@ -2,9 +2,18 @@ import styles from "./Aboutme.module.scss";
 import AnimatedLetters from "../Animated/AnimatedLetters";
 import Image from "next/image";
 import RevealIt from "../RevealIt";
+import { client } from "@/sanity/lib/client";
+import { groq } from "next-sanity";
+import { urlForImage } from "@/sanity/lib/image";
 
 const Aboutme = async () => {
   const titlearr = ["A", "b", "o", "u", "t", " ", "M", "e"];
+  const query = groq`
+  *[_type == "about"]
+  `;
+  const aboutstuff = await client.fetch(query);
+
+  console.log(aboutstuff);
   return (
     <div id="aboutme" className={styles.about}>
       <RevealIt>
@@ -47,7 +56,7 @@ const Aboutme = async () => {
             className={`wow animate__animated animate__fadeInUp ${styles.gif}`}
           >
             <Image
-              src={`/assets/coding.gif`}
+              src={urlForImage(aboutstuff[0].image).url()}
               alt="taleemmankuer"
               loading="lazy"
               width={400}
