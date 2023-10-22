@@ -1,10 +1,11 @@
 "use client";
-import React from "react";
+import { useState } from "react";
 import { RevealWrapper } from "next-reveal";
 
-const RevealIt = ({ children, styles }) => {
+const RevealIt = ({ children, styles, reset }) => {
+  const [resetstate, setreset] = useState(reset == undefined ? true : false);
   return (
-    <RevealWrapper className={styles} reset={true}>
+    <RevealWrapper className={styles} reset={resetstate}>
       {children}
     </RevealWrapper>
   );
