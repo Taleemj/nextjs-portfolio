@@ -9,6 +9,17 @@ export const projects = {
       type: "string",
     },
     {
+      name: "tags",
+      title: "tags",
+      type: "array",
+      of: [
+        {
+          type: "string",
+          name: "tag",
+        },
+      ],
+    },
+    {
       name: "slug",
       title: "Slug",
       type: "slug",
@@ -16,12 +27,6 @@ export const projects = {
         source: "title",
         maxLength: 96,
       },
-    },
-    {
-      name: "author",
-      title: "Author",
-      type: "reference",
-      to: { type: "about" },
     },
     {
       name: "mainImage",
@@ -44,27 +49,27 @@ export const projects = {
       type: "array",
       of: [{ type: "reference", to: { type: "category" } }],
     },
+    // {
+    //   name: "publishedAt",
+    //   title: "Published at",
+    //   type: "datetime",
+    // },
     {
-      name: "publishedAt",
-      title: "Published at",
-      type: "datetime",
-    },
-    {
-      name: "body",
-      title: "Body",
-      type: "blockContent",
+      name: "description",
+      title: "Description",
+      type: "text",
     },
   ],
 
-  preview: {
-    select: {
-      title: "title",
-      about: "about.name",
-      media: "mainImage",
-    },
-    prepare(selection) {
-      const { about } = selection;
-      return { ...selection, subtitle: author && `by ${about}` };
-    },
-  },
+  // preview: {
+  //   select: {
+  //     title: "title",
+  //     about: "about.name",
+  //     media: "mainImage",
+  //   },
+  //   prepare(selection) {
+  //     const { about } = selection;
+  //     return { ...selection, subtitle: author && `by ${about}` };
+  //   },
+  // },
 };
