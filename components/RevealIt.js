@@ -6,7 +6,6 @@ const RevealIt = ({ children, styles, thereset }) => {
   const [resetit, setresetit] = useState(thereset == undefined ? true : false);
   return (
     <RevealWrapper reset={resetit} className={styles}>
-      {console.log(resetit)}
       {children}
     </RevealWrapper>
   );
