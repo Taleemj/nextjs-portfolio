@@ -20,7 +20,6 @@ const Aboutme = async () => {
   `;
   const aboutstuff = await client.fetch(query);
   const thecvUrl = await client.fetch(query1);
-  console.log(thecvUrl);
   return (
     <div id="aboutme" className={styles.about}>
       <RevealIt>
