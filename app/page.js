@@ -8,6 +8,7 @@ import {
   Contact,
   Footer,
 } from "@/components";
+import TheMouseTrail from "@/components/MouseTrail";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Aboutme />
       <Contact />
       <Footer styles={styles} />
+      <TheMouseTrail />
     </main>
   );
 }
