@@ -4,10 +4,8 @@ import RevealIt from "../RevealIt";
 
 const Project = ({ title, description, codeLink, demoLink, img, tag }) => {
   return (
-    <RevealIt>
-      <div
-        className={`animate__animated animate__fadeInUp ${styles.singleProject}`}
-      >
+    <RevealIt thereset={false}>
+      <div className={`${styles.singleProject}`}>
         <div className={styles.img}>
           <Image src={`/${img}`} alt={title} width={300} height={150} />
         </div>
