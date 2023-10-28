@@ -1,3 +1,4 @@
+"use client";
 import { useEffect } from "react";
 import WOW from "wow.js";
 import styles from "./Project.module.scss";
