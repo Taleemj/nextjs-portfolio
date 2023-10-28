@@ -20,6 +20,16 @@ export const projects = {
       ],
     },
     {
+      name: "codeLink",
+      title: "codeLink",
+      type: "string",
+    },
+    {
+      name: "demoLink",
+      title: "demoLink",
+      type: "string",
+    },
+    {
       name: "slug",
       title: "Slug",
       type: "slug",
