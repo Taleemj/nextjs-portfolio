@@ -7,7 +7,13 @@ const Project = ({ title, description, codeLink, demoLink, img, tag }) => {
     <RevealIt thereset={false}>
       <div className={`${styles.singleProject}`}>
         <div className={styles.img}>
-          <Image src={`/${img}`} alt={title} width={300} height={150} />
+          <Image
+            src={img}
+            alt={title}
+            width={1000}
+            height={1000}
+            loading="lazy"
+          />
         </div>
         <h4>{title}</h4>
         <p>{description}</p>

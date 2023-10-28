@@ -1,16 +1,22 @@
 "use client";
 import { useState } from "react";
 import styles from "./Projects.module.scss";
-import { works } from "../project/Projects";
 import Project from "../project/Project";
 import "animate.css";
 import AnimatedLetters from "../Animated/AnimatedLetters";
 import RevealIt from "../RevealIt";
+import { urlForImage } from "@/sanity/lib/image";
 
-const Projects = () => {
-  const htmlcss = works.filter((item) => item.category === "htmlcss");
-  const reactapis = works.filter((item) => item.category === "reactapis");
-  const fullstack = works.filter((item) => item.category === "fullstack");
+const Projects = ({ works, categories }) => {
+  const htmlcss = works.filter(
+    (item) => item.categories[0]._ref == categories[2]._id
+  );
+  const reactapis = works.filter(
+    (item) => item.categories[0]._ref == categories[0]._id
+  );
+  const fullstack = works.filter(
+    (item) => item.categories[0]._ref == categories[1]._id
+  );
   const [filtered, setfiltered] = useState([...works]);
   const [active, setactive] = useState(0);
   const titlearr = ["M", "y", "", "P", "r", "o", "j", "e", "c", "t", "s"];
@@ -88,13 +94,13 @@ const Projects = () => {
       <div className={styles.Projects}>
         {filtered.map((item) => (
           <Project
-            key={item.id}
+            key={item._id}
             title={item.title}
             description={item.description}
-            tag={item?.tag}
+            tag={item?.tags}
             codeLink={item.codeLink}
             demoLink={item.demoLink}
-            img={item.img}
+            img={urlForImage(item.mainImage)?.url()}
           />
         ))}
       </div>
