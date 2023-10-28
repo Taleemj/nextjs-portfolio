@@ -12,7 +12,7 @@ import TheMouseTrail from "@/components/MouseTrail";
 import { client } from "@/sanity/lib/client";
 import { groq } from "next-sanity";
 
-// export const revalidate = 60;
+export const revalidate = 60;
 
 export default async function Home() {
   const query = groq`
