@@ -8,6 +8,8 @@ import { urlForImage } from "@/sanity/lib/image";
 import { PortableText } from "@portabletext/react";
 import { RichText } from "../Richtext/Richtext";
 
+export const revalidate = 60;
+
 const Aboutme = async () => {
   const titlearr = ["A", "b", "o", "u", "t", " ", "M", "e"];
   const query = groq`
