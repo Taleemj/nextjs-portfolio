@@ -1,19 +1,11 @@
-"use client";
-import { useEffect } from "react";
-import WOW from "wow.js";
 import styles from "./Project.module.scss";
 import Image from "next/image";
 import RevealIt from "../RevealIt";
 
 const Project = ({ title, description, codeLink, demoLink, img, tag }) => {
-  useEffect(() => {
-    new WOW().init();
-  }, []);
   return (
     // <RevealIt thereset={false}>
-    <div
-      className={`wow animate__animated animate__fadeInDown ${styles.singleProject}`}
-    >
+    <div className={`${styles.singleProject}`}>
       <div className={styles.img}>
         <Image
           src={img}

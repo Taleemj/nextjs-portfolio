@@ -30,7 +30,6 @@
     "styled-components": "5.2",
     "three": "^0.153.0",
     "three-glow-mesh": "^0.1.2",
-    "web-vitals": "^2.1.4",
-    "wow.js": "^1.2.2"
+    "web-vitals": "^2.1.4"
   }
 }
