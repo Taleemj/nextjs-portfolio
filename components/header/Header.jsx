@@ -45,7 +45,7 @@ const Header = () => {
           <div className={`${styles.herotext}`}>
             <RevealIt>
               <strong>
-                <h1 className="animate__animated animate__fadeInUp">
+                <h1>
                   <span className={styles.firstspan}>
                     <span
                       className={`animate__animated animate__bounceIn ${styles.textanimate}`}
@@ -75,12 +75,12 @@ const Header = () => {
               </strong>
             </RevealIt>
             <RevealIt>
-              <h2 className="animate__animated animate__fadeInUp">
+              <h2>
                 <AnimatedLetters wordArray={titlearr} idx={3} />
               </h2>
             </RevealIt>
             <RevealIt>
-              <p className="animate__animated animate__fadeInUp">
+              <p>
                 Front End, I creates beautiful and informative websites that
                 help users with what they are looking for.
               </p>
