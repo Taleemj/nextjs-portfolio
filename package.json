@@ -18,7 +18,7 @@
     "animate.css": "^4.1.1",
     "eslint": "8.50.0",
     "eslint-config-next": "13.5.4",
-    "next": "13.5.4",
+    "next": "^14.0.3",
     "next-reveal": "^1.0.6",
     "next-sanity": "^5.5.8",
     "react": "18.2.0",
