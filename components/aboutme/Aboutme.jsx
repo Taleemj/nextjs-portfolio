@@ -1,3 +1,4 @@
+"use client";
 import styles from "./Aboutme.module.scss";
 import AnimatedLetters from "../Animated/AnimatedLetters";
 import Image from "next/image";
@@ -35,15 +36,11 @@ const Aboutme = async () => {
         <div className={styles.aboutcontainer}>
           <div className={styles.txt}>
             <PortableText value={aboutstuff[0].bio} components={RichText} />
-            <a href={`${thecvUrl[0].cvurl}`} target="_blank" rel="noreferrer">
-              <button className="wow animate__animated animate__fadeInUp">
-                Download CV
-              </button>
-            </a>
+            <button className="wow animate__animated animate__fadeInUp" onClick={() => alert("currently unavailable")}>
+              Download CV
+            </button>
           </div>
-          <div
-            className={`wow animate__animated animate__fadeInUp ${styles.gif}`}
-          >
+          <div className={`wow animate__animated animate__fadeInUp ${styles.gif}`}>
             <Image
               src={urlForImage(aboutstuff[0].image).url()}
               alt="taleemmankuer"
