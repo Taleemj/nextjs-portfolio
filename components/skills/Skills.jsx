@@ -1,8 +1,9 @@
 import styles from "./Skills.module.scss";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { DiGit } from "react-icons/di";
+import { LuSmartphone } from "react-icons/lu";
 import AnimatedLetters from "../Animated/AnimatedLetters";
-import RevealIt from "../RevealIt";
+// import RevealIt from "../RevealIt";
 
 const Skills = () => {
   const titlearr = ["T", "e", "c", "h", "n", "o", "l", "o", "g", "i", "e", "s"];
@@ -14,7 +15,7 @@ const Skills = () => {
 
       <p className="animate__animated animate__fadeInUp">
         I&apos;ve worked with a wide range of
-        <span>web & mobile development</span>
+        <span> web & mobile development </span>
         Technologies.From frontend and design to backend.
       </p>
 
@@ -51,7 +52,7 @@ const Skills = () => {
           </ul>
         </div>
         <div className={`animate__animated animate__fadeInUp ${styles.tools}`}>
-          <DiGit />
+          <LuSmartphone />
           <h4>Mobile Development</h4>
           <p>Proficient in</p>
           <ul>
