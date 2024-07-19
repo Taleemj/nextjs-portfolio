@@ -25,14 +25,14 @@ const Aboutme = async () => {
   const thecvUrl = await client.fetch(query1);
   return (
     <div id="aboutme" className={styles.about}>
-      <RevealIt>
+      <>
         <strong>
           <h1 className="wow animate__animated animate__fadeInUp">
             <AnimatedLetters wordArray={titlearr} idx={3} />
           </h1>
         </strong>
-      </RevealIt>
-      <RevealIt>
+      </>
+      <>
         <div className={styles.aboutcontainer}>
           <div className={styles.txt}>
             <PortableText value={aboutstuff[0].bio} components={RichText} />
@@ -50,7 +50,7 @@ const Aboutme = async () => {
             />
           </div>
         </div>
-      </RevealIt>
+      </>
     </div>
   );
 };

@@ -8,42 +8,35 @@ const Skills = () => {
   const titlearr = ["T", "e", "c", "h", "n", "o", "l", "o", "g", "i", "e", "s"];
   return (
     <div id="skills" className={styles.skills}>
-      <RevealIt>
-        <h1 className="animate__animated animate__fadeInUp">
-          <AnimatedLetters wordArray={titlearr} idx={3} />
-        </h1>
-      </RevealIt>
-      <RevealIt>
-        <p className="animate__animated animate__fadeInUp">
-          I&apos;ve worked with a wide range of
-          <span>web & mobile development</span>
-          Technologies.From frontend and design to backend.
-        </p>
-      </RevealIt>
+      <h1 className="animate__animated animate__fadeInUp">
+        <AnimatedLetters wordArray={titlearr} idx={3} />
+      </h1>
 
-      <RevealIt styles={styles.skillscontainer}>
-        <div
-          className={`animate__animated animate__fadeInUp ${styles.frontend}`}
-        >
-          <FaNodeJs />
-          <h4>Web Development</h4>
-          <p>Experienced with</p>
+      <p className="animate__animated animate__fadeInUp">
+        I&apos;ve worked with a wide range of
+        <span>web & mobile development</span>
+        Technologies.From frontend and design to backend.
+      </p>
+
+      <div className={styles.skillscontainer}>
+        <div className={`animate__animated animate__fadeInUp ${styles.frontend}`}>
+          <FaReact />
+          <h4>Front-End</h4>
+          <p>Fluent in</p>
           <ul>
             <li>React & Next Js</li>
             <li>Html / Css / Scss</li>
             <li>JavaScript</li>
           </ul>
         </div>
-        <div
-          className={`animate__animated animate__fadeInUp ${styles.backend}`}
-        >
-          <FaReact />
-          <h4>Learning</h4>
-          <p>Interested in</p>
+        <div className={`animate__animated animate__fadeInUp ${styles.backend}`}>
+          <FaNodeJs />
+          <h4>Back-End</h4>
+          <p>Expertise in</p>
           <ul>
-            <li>React Native</li>
-            <li>Flutter</li>
-            <li>Node / Express Js</li>
+            <li>Node & Express Js</li>
+            <li>PostgreSql</li>
+            <li>TypeOrm</li>
           </ul>
         </div>
         <div className={`animate__animated animate__fadeInUp ${styles.tools}`}>
@@ -51,13 +44,21 @@ const Skills = () => {
           <h4>Tools</h4>
           <p>Worked with</p>
           <ul>
+            <li>Sanity.io / Firebase / Supabase</li>
             <li>Netlify / Vercel</li>
             <li>Git & GitHub</li>
-            <li>Sanity.io / Firebase</li>
             <li>Vs Code</li>
           </ul>
         </div>
-      </RevealIt>
+        <div className={`animate__animated animate__fadeInUp ${styles.tools}`}>
+          <DiGit />
+          <h4>Mobile Development</h4>
+          <p>Proficient in</p>
+          <ul>
+            <li>React Native</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

@@ -5,14 +5,10 @@ import RevealIt from "./RevealIt";
 
 const Footer = ({ styles }) => {
   return (
-    <RevealIt>
+    <>
       <footer className={styles.footer}>
         <div className={styles.icons}>
-          <a
-            href="https://linkedin.com/in/taleem-mankuer-713367235"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://linkedin.com/in/taleem-mankuer-713367235" target="_blank" rel="noreferrer">
             <BsLinkedin />
           </a>
           <a href="https://github.com/Taleemj" target="_blank" rel="noreferrer">
@@ -24,7 +20,7 @@ const Footer = ({ styles }) => {
           {new Date().getFullYear()}
         </h4>
       </footer>
-    </RevealIt>
+    </>
   );
 };
 

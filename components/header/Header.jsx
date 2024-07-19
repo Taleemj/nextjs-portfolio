@@ -7,36 +7,8 @@ import AnimatedLetters from "../Animated/AnimatedLetters";
 import RevealIt from "../RevealIt";
 
 const Header = () => {
-  const nameArry = [
-    "a",
-    "l",
-    "e",
-    "e",
-    "m",
-    " ",
-    "M",
-    "a",
-    "n",
-    "k",
-    "u",
-    "e",
-    "r",
-  ];
-  const titlearr = [
-    "W",
-    "e",
-    "b",
-    " ",
-    "D",
-    "e",
-    "v",
-    "e",
-    "l",
-    "o",
-    "p",
-    "e",
-    "r",
-  ];
+  const nameArry = ["a", "l", "e", "e", "m", " ", "M", "a", "n", "k", "u", "e", "r"];
+  const titlearr = ["W", "e", "b", " ", "D", "e", "v", "e", "l", "o", "p", "e", "r"];
   return (
     <>
       <Navbar />
@@ -47,27 +19,11 @@ const Header = () => {
               <strong>
                 <h1>
                   <span className={styles.firstspan}>
-                    <span
-                      className={`animate__animated animate__bounceIn ${styles.textanimate}`}
-                    >
-                      H
-                    </span>
-                    <span
-                      className={`animate__animated animate__bounceIn ${styles.textanimate}`}
-                    >
-                      i,
-                    </span>
+                    <span className={`animate__animated animate__bounceIn ${styles.textanimate}`}>H</span>
+                    <span className={`animate__animated animate__bounceIn ${styles.textanimate}`}>i,</span>
                     <br />
-                    <span
-                      className={`animate__animated animate__bounceIn ${styles.textanimate}`}
-                    >
-                      I
-                    </span>
-                    <span
-                      className={`animate__animated animate__bounceIn ${styles.textanimate}`}
-                    >
-                      &apos;m
-                    </span>
+                    <span className={`animate__animated animate__bounceIn ${styles.textanimate}`}>I</span>
+                    <span className={`animate__animated animate__bounceIn ${styles.textanimate}`}>&apos;m</span>
                   </span>
                   <span className={styles.firstletter}>T</span>
                   <AnimatedLetters wordArray={nameArry} idx={3} />
@@ -81,15 +37,14 @@ const Header = () => {
             </RevealIt>
             <RevealIt>
               <p>
-                Front End, I creates beautiful and informative websites that
-                help users with what they are looking for.
+                As a Full-Stack Developer based in kampala, I create visually appealing, highly functional websites. I
+                manage everything from front-end design to backend APIs and databases, ensuring a seamless user
+                experience.
               </p>
             </RevealIt>
 
             <RevealIt>
-              <div
-                className={`animate__animated animate__fadeInUp ${styles.buttons}`}
-              >
+              <div className={`animate__animated animate__fadeInUp ${styles.buttons}`}>
                 <a href="#projects">Projects</a>
 
                 <a href="#contact">Contact me!</a>

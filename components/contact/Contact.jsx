@@ -35,15 +35,14 @@ const Contact = () => {
       .catch((err) => alert("something went wrong try again"));
   };
   return (
-    <RevealIt>
+    <>
       <div id="contact" className={styles.contactme}>
         <div className={styles.info}>
           <h1 className="wow animate__animated animate__fadeInUp">
             <AnimatedLetters wordArray={titlearr} idx={3} />
           </h1>
           <p className="wow animate__animated animate__fadeInUp">
-            Leave me a message if you&apos;re looking for web development
-            services or just say hii &#128075;.
+            Leave me a message if you&apos;re looking for web development services or just say hii &#128075;.
           </p>
           <div className={`${styles.contactinfo}`}>
             <div className="email">
@@ -58,43 +57,19 @@ const Contact = () => {
           <form ref={formref} autoComplete="off" onSubmit={handleOnSubmit}>
             <ul>
               <li>
-                <input
-                  type="text"
-                  name="name"
-                  className="name"
-                  placeholder="Name"
-                  ref={nameref}
-                  required
-                />
+                <input type="text" name="name" className="name" placeholder="Name" ref={nameref} required />
               </li>
               <li>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  ref={emailref}
-                  required
-                />
+                <input type="email" name="email" placeholder="Email" ref={emailref} required />
               </li>
             </ul>
-            <input
-              type="text"
-              name="subject"
-              placeholder="Subject"
-              ref={subjectref}
-              required
-            />
-            <textarea
-              placeholder="Message..."
-              name="message"
-              ref={messageref}
-              required
-            />
+            <input type="text" name="subject" placeholder="Subject" ref={subjectref} required />
+            <textarea placeholder="Message..." name="message" ref={messageref} required />
             <button type="submit">Send Message</button>
           </form>
         </div>
       </div>
-    </RevealIt>
+    </>
   );
 };
 
