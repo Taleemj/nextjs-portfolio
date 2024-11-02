@@ -41,9 +41,9 @@ const Header = () => {
             </RevealIt>
             <RevealIt>
               <p>
-                As a Full-Stack Developer based in kampala, I create visually appealing, highly functional websites. I
-                manage projects from front-end development to backend APIs with javascript and databases, ensuring a
-                seamless user experience.
+                As a Full-Stack Developer based in kampala with 3 years of experience, I create visually appealing,
+                highly functional websites. I manage projects from front-end development to backend APIs with javascript
+                and databases, ensuring a seamless user experience.
               </p>
             </RevealIt>
             <RevealIt>

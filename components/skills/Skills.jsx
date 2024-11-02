@@ -54,7 +54,7 @@ const Skills = () => {
         <div className={`animate__animated animate__fadeInUp ${styles.tools}`}>
           <LuSmartphone />
           <h4>Mobile Development</h4>
-          <p>Proficient in</p>
+          <p>Experience in</p>
           <ul>
             <li>React Native</li>
           </ul>
