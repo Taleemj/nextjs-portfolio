@@ -10,15 +10,16 @@
   footer {
     text-align: center;
     margin: 0;
-    border-top: 1px solid #a1a1a1ff;
+    border-top: 1px solid #3f3f3fab;
     padding: 20px 0;
     .icons {
       color: #fff;
+      margin: 10px 0 15px;
       a {
         color: #fff;
         margin: 0 10px;
         svg {
-          font-size: 18px;
+          font-size: 25px;
           &:hover {
             color: var(--red);
             transition: 0.5s;
@@ -29,7 +30,7 @@
     }
     h4 {
       color: #a1a1a1ff;
-      font-size: 18px;
+      font-size: 19px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -42,7 +43,8 @@
         font-size: 20px;
       }
       svg {
-        box-shadow: 0 0 10px var(--red);
+        font-size: 22px;
+        // box-shadow: 0 0 10px var(--red);
       }
     }
   }

@@ -62,16 +62,95 @@
     align-items: center;
     width: 85%;
     margin: 0 auto;
-    button {
-      background-color: var(--cyan);
+    // button {
+    //   background-color: var(--cyan);
+    //   border: none;
+    //   border: 1px solid var(--cyan);
+    //   outline: none;
+    //   padding: 5px 10px;
+    //   color: #fff;
+    //   border-radius: 3px;
+    //   box-shadow: 0 0 5px var(--cyan);
+    //   cursor: pointer;
+    // }
+    .button {
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
       border: none;
-      border: 1px solid var(--cyan);
-      outline: none;
+      background: none;
+      // color: #fff !important;
+      cursor: pointer;
+      position: relative;
+      font-weight: bold;
+      transition: all 0.15s ease;
+      text-decoration: none;
+      border-radius: 3px;
+      box-shadow: 0 0 5px var(--cyan);
+      overflow: hidden;
+    }
+
+    .button_text {
+      color: #fff !important;
+      position: relative;
+      font-size: 16px;
+    }
+
+    .button_lg {
+      position: relative;
+      display: block;
       padding: 5px 10px;
       color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px var(--cyan);
-      cursor: pointer;
+      background-color: var(--cyan);
+      overflow: hidden;
+      box-shadow: inset 0px 0px 0px 1px transparent;
+    }
+
+    .button_lg::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 2px;
+      background-color: var(--cyan);
+    }
+
+    .button_lg::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 4px;
+      height: 4px;
+      background-color: var(--cyan);
+      transition: all 0.2s ease;
+    }
+
+    .button_sl {
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: -1px;
+      left: -8px;
+      width: 0;
+      background-color: #ff4655;
+      transform: skew(-15deg);
+      transition: all 0.2s ease;
+    }
+
+    .button:hover {
+      color: var(--cyan);
+    }
+
+    .button:hover .button_sl {
+      width: calc(100% + 15px);
+    }
+
+    .button:hover .button_lg::after {
+      background-color: #fff;
     }
   }
 }

@@ -7,13 +7,7 @@ const Project = ({ title, description, codeLink, demoLink, img, tag }) => {
     // <RevealIt thereset={false}>
     <div className={`${styles.singleProject}`}>
       <div className={styles.img}>
-        <Image
-          src={img}
-          alt={title}
-          width={1000}
-          height={1000}
-          loading="lazy"
-        />
+        <Image src={img} alt={title} width={1000} height={1000} loading="lazy" />
       </div>
       <h4>{title}</h4>
       <p>{description}</p>
@@ -24,17 +18,32 @@ const Project = ({ title, description, codeLink, demoLink, img, tag }) => {
         ))}
       </div>
       <div className={styles.linkbtns}>
-        <a href={demoLink} target="_blank" rel="noreferrer">
+        {/* <a href={demoLink} target="_blank" rel="noreferrer">
           <button href={demoLink}>Preview</button>
         </a>
         <a href={codeLink} target="_blank" rel="noreferrer">
+          <button href={codeLink} onClick={() => (codeLink ? null : alert("sorry, this code is not public."))}>
+            Code
+          </button>
+        </a> */}
+
+        <a href={demoLink} target="_blank" rel="noreferrer" className={styles.button}>
+          <span className={styles.button_lg}>
+            <span className={styles.button_sl}></span>
+            <p className={styles.button_text}>Preview</p>
+          </span>
+        </a>
+
+        <a href={codeLink} target="_blank" rel="noreferrer">
           <button
             href={codeLink}
-            onClick={() =>
-              codeLink ? null : alert("sorry, this code is not public.")
-            }
+            className={styles.button}
+            onClick={() => (codeLink ? null : alert("sorry, this code is not public."))}
           >
-            Code
+            <span className={styles.button_lg}>
+              <span className={styles.button_sl}></span>
+              <p className={styles.button_text}>Code</p>
+            </span>
           </button>
         </a>
       </div>

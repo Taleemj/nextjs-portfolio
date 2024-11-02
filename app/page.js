@@ -1,16 +1,11 @@
 import styles from "./page.module.scss";
 import "animate.css";
-import {
-  Header,
-  Projects,
-  Skills,
-  Aboutme,
-  Contact,
-  Footer,
-} from "@/components";
+import { Header, Projects, Skills, Aboutme, Contact, Footer } from "@/components";
 import TheMouseTrail from "@/components/MouseTrail";
 import { client } from "@/sanity/lib/client";
 import { groq } from "next-sanity";
+import dynamic from "next/dynamic";
+import Loader from "@/components/loader/Loader";
 
 export const revalidate = 60;
 
@@ -27,8 +22,9 @@ export default async function Home() {
   return (
     <main className={styles.container}>
       <Header />
-      <Projects works={works} categories={thecategories} />
+      <Loader />
       <Skills />
+      <Projects works={works} categories={thecategories} />
       <Aboutme />
       <Contact />
       <Footer styles={styles} />

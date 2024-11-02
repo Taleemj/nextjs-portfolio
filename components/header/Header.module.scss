@@ -45,6 +45,12 @@
         color: rgb(211, 211, 211);
         font-size: 18px;
       }
+      .buttons2 {
+        margin-top: 20px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
       .buttons {
         margin-top: 30px;
         :first-child {
@@ -146,7 +152,8 @@
         .face5 {
           transform: rotateY(-90deg) rotateZ(90deg) translateZ(150px);
           svg {
-            color: purple;
+            // color: purple;
+            color: #000;
           }
         }
         .face6 {

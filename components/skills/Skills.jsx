@@ -26,7 +26,7 @@ const Skills = () => {
           <p>Fluent in</p>
           <ul>
             <li>React & Next Js</li>
-            <li>Html / Css / Scss</li>
+            <li>Tailwind / Css / Scss</li>
             <li>JavaScript</li>
           </ul>
         </div>
@@ -46,7 +46,7 @@ const Skills = () => {
           <p>Worked with</p>
           <ul>
             <li>Sanity.io / Firebase / Supabase</li>
-            <li>Netlify / Vercel</li>
+            <li>Netlify / Vercel / aws</li>
             <li>Git & GitHub</li>
             <li>Vs Code</li>
           </ul>

@@ -14,7 +14,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = (event) => {
       setScrollTop(document.documentElement.scrollTop);
-      scrollTop > 400 ? setNavClass(true) : setNavClass(false);
+      scrollTop > 500 ? setNavClass(true) : setNavClass(false);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -40,11 +40,7 @@ const Navbar = () => {
             <a href="#skills">Technologies</a>
           </li>
           <li>
-            <a
-              href="https://thedeveloperblog.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://thedeveloperblog.vercel.app/" target="_blank" rel="noreferrer">
               Blog
             </a>
           </li>
@@ -56,11 +52,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className={styles.socialLinks}>
-          <a
-            href="https://linkedin.com/in/taleem-mankuer-713367235"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://linkedin.com/in/taleem-mankuer-713367235" target="_blank" rel="noreferrer">
             <BsLinkedin />
           </a>
           <a href="https://github.com/Taleemj" target="_blank" rel="noreferrer">
@@ -78,13 +70,7 @@ const Navbar = () => {
         </div>
         <div className={styles.logo}>
           <a href="#hero">
-            <Image
-              src={"/assets/tm.png"}
-              alt="TM"
-              onClick={() => setMenuOpen(false)}
-              width={60}
-              height={60}
-            />
+            <Image src={"/assets/tm.png"} alt="TM" onClick={() => setMenuOpen(false)} width={60} height={60} />
             <h5>Taleem</h5>
             <h6>Web Developer</h6>
           </a>
@@ -97,11 +83,7 @@ const Navbar = () => {
             <a href="#skills">Technologies</a>
           </li>
           <li>
-            <a
-              href="https://thedeveloperblog.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://thedeveloperblog.vercel.app/" target="_blank" rel="noreferrer">
               Blog
             </a>
           </li>
@@ -113,11 +95,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className={styles.socialLinks}>
-          <a
-            href="https://linkedin.com/in/taleem-mankuer-713367235"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://linkedin.com/in/taleem-mankuer-713367235" target="_blank" rel="noreferrer">
             <BsLinkedin />
           </a>
           <a href="https://github.com/Taleemj" target="_blank" rel="noreferrer">

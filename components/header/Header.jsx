@@ -3,7 +3,7 @@ import styles from "./Header.module.scss";
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaReact, FaNodeJs, FaCss3Alt, FaSass } from "react-icons/fa";
 // import { RiNextjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandNextjs, TbBrandTailwind } from "react-icons/tb";
 import { SiJavascript } from "react-icons/si";
 import AnimatedLetters from "../Animated/AnimatedLetters";
 import RevealIt from "../RevealIt";
@@ -42,8 +42,8 @@ const Header = () => {
             <RevealIt>
               <p>
                 As a Full-Stack Developer based in kampala, I create visually appealing, highly functional websites. I
-                manage everything from front-end design to backend APIs and databases, ensuring a seamless user
-                experience.
+                manage projects from front-end development to backend APIs with javascript and databases, ensuring a
+                seamless user experience.
               </p>
             </RevealIt>
             <RevealIt>
@@ -64,7 +64,8 @@ const Header = () => {
                 <AiFillHtml5 />
               </div>
               <div className={styles.face2}>
-                <FaCss3Alt />
+                {/* <FaCss3Alt /> */}
+                <TbBrandTailwind />
               </div>
               <div className={styles.face3}>
                 <SiJavascript />
