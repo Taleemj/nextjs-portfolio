@@ -2,9 +2,13 @@ import Navbar from "../navbar/Navbar";
 import styles from "./Header.module.scss";
 import { AiFillHtml5 } from "react-icons/ai";
 import { FaReact, FaNodeJs, FaCss3Alt, FaSass } from "react-icons/fa";
+// import { RiNextjsLine } from "react-icons/ri";
+import { TbBrandNextjs } from "react-icons/tb";
 import { SiJavascript } from "react-icons/si";
 import AnimatedLetters from "../Animated/AnimatedLetters";
 import RevealIt from "../RevealIt";
+import PrimaryBtn from "../ui/Buttons/Primary";
+import SecondaryBtn from "../ui/Buttons/Secondary";
 
 const Header = () => {
   const nameArry = ["a", "l", "e", "e", "m", " ", "M", "a", "n", "k", "u", "e", "r"];
@@ -42,13 +46,16 @@ const Header = () => {
                 experience.
               </p>
             </RevealIt>
-
             <RevealIt>
-              <div className={`animate__animated animate__fadeInUp ${styles.buttons}`}>
+              <div className={styles.buttons2}>
+                <PrimaryBtn href={"#projects"} text={"Projects"} />
+                <SecondaryBtn href={"#contact"} text={"Contact me!"} />
+              </div>
+              {/* <div className={`animate__animated animate__fadeInUp ${styles.buttons}`}>
                 <a href="#projects">Projects</a>
 
                 <a href="#contact">Contact me!</a>
-              </div>
+              </div> */}
             </RevealIt>
           </div>
           <div className={`animate__animated animate__fadeIn ${styles.cube}`}>
@@ -66,7 +73,7 @@ const Header = () => {
                 <FaReact />
               </div>
               <div className={styles.face5}>
-                <FaSass />
+                <TbBrandNextjs />
               </div>
               <div className={styles.face6}>
                 <FaNodeJs />
