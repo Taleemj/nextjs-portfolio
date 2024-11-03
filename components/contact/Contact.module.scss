@@ -100,25 +100,147 @@
           border-bottom: 2px solid var(--red);
         }
       }
-      button {
-        border: 1px solid var(--cyan);
-        background: transparent;
-        outline: none;
-        width: 200px;
-        padding: 10px 20px;
-        align-self: flex-end;
+      // button {
+      //   border: 1px solid var(--cyan);
+      //   background: transparent;
+      //   outline: none;
+      //   width: 200px;
+      //   padding: 10px 20px;
+      //   align-self: flex-end;
+      //   color: var(--cyan);
+      //   font-size: 18px;
+      //   cursor: pointer;
+      //   margin-top: 10px;
+      //   box-shadow: 0 0 10px var(--cyan);
+      //   &:hover {
+      //     background-color: var(--red);
+      //     box-shadow: 0 0 10px var(--red);
+      //     border: 1px solid var(--red);
+      //     color: #fff;
+      //     transition: 0.5s;
+      //   }
+      // }
+
+      /* From Uiverse.io by mrhyddenn */
+      .button {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none;
+        background: none;
         color: var(--cyan);
-        font-size: 18px;
         cursor: pointer;
+        position: relative;
+        padding: 8px;
         margin-top: 10px;
-        box-shadow: 0 0 10px var(--cyan);
-        &:hover {
-          background-color: var(--red);
-          box-shadow: 0 0 10px var(--red);
-          border: 1px solid var(--red);
-          color: #fff;
-          transition: 0.5s;
-        }
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+        transition: all 0.15s ease;
+        text-decoration: none;
+      }
+
+      .button::before,
+      .button::after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        height: calc(50% - 5px);
+        border: 1px solid #7d8082;
+        transition: all 0.15s ease;
+      }
+
+      .button::before {
+        top: 0;
+        border-bottom-width: 0;
+      }
+
+      .button::after {
+        bottom: 0;
+        border-top-width: 0;
+      }
+
+      .button:active,
+      .button:focus {
+        outline: none;
+      }
+
+      .button:active::before,
+      .button:active::after {
+        right: 3px;
+        left: 3px;
+      }
+
+      .button:active::before {
+        top: 3px;
+      }
+
+      .button:active::after {
+        bottom: 3px;
+      }
+
+      .button_lg {
+        position: relative;
+        display: block;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: var(--cyan);
+        overflow: hidden;
+        box-shadow: inset 0px 0px 0px 1px transparent;
+      }
+
+      .button_lg::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2px;
+        height: 2px;
+        background-color: var(--cyan);
+      }
+
+      .button_lg::after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 4px;
+        height: 4px;
+        background-color: var(--cyan);
+        transition: all 0.2s ease;
+      }
+
+      .button_sl {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: -1px;
+        left: -8px;
+        width: 0;
+        background-color: #ff4655;
+        transform: skew(-15deg);
+        transition: all 0.2s ease;
+      }
+
+      .button_text {
+        position: relative;
+        color: #fff;
+      }
+
+      .button:hover {
+        color: var(--cyan);
+      }
+
+      .button:hover .button_sl {
+        width: calc(100% + 15px);
+      }
+
+      .button:hover .button_lg::after {
+        background-color: #fff;
       }
     }
   }
@@ -187,6 +309,14 @@
             height: 700px;
           }
         }
+      }
+    }
+    .gif {
+      width: 96%;
+      margin: 0 auto;
+      img {
+        width: 100%;
+        height: auto;
       }
     }
   }

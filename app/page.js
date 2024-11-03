@@ -1,11 +1,21 @@
 import styles from "./page.module.scss";
 import "animate.css";
-import { Header, Projects, Skills, Aboutme, Contact, Footer } from "@/components";
+import {
+  Header,
+  Projects,
+  Skills,
+  Aboutme,
+  // Contact,
+  Footer,
+} from "@/components";
 import TheMouseTrail from "@/components/MouseTrail";
 import { client } from "@/sanity/lib/client";
 import { groq } from "next-sanity";
 import dynamic from "next/dynamic";
 import Loader from "@/components/loader/Loader";
+const Contact = dynamic(() => import("@/components/contact/Contact"), {
+  ssr: false,
+});
 
 export const revalidate = 60;
 
