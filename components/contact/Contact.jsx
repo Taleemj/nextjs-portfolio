@@ -1,7 +1,7 @@
 "use client";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import styles from "./Contact.module.scss";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail, AiOutlineLoading } from "react-icons/ai";
 import { BsPhone } from "react-icons/bs";
 import AnimatedLetters from "../Animated/AnimatedLetters";
 import emailjs from "@emailjs/browser";
@@ -14,26 +14,61 @@ const Contact = () => {
   const emailref = useRef();
   const messageref = useRef();
   const formref = useRef();
+  const [sendLoading, setSendLoading] = useState(false);
   const titlearr = ["C", "o", "n", "t", "a", "c", "t", " ", "M", "e"];
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
+    setSendLoading(true);
 
-    emailjs
-      .sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        formref.current,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        (nameref.current.value = ""),
-        (emailref.current.value = ""),
-        (messageref.current.value = ""),
-        (subjectref.current.value = "")
-      )
-      .then(alert("thank you, your message has been sent successfully"))
-      .catch((err) => alert("something went wrong try again"));
+    try {
+      fetch("/api/sendEmail", {
+        method: "POST",
+        body: JSON.stringify({
+          name: nameref.current.value,
+          subject: subjectref.current.value,
+          email: emailref.current.value,
+          message: messageref.current.value,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((res) => {
+          if (res.status === 200) {
+            setSendLoading(false);
+            alert("message sent successfully");
+          }
+        })
+        .then(() => {
+          nameref.current.value = "";
+          emailref.current.value = "";
+          messageref.current.value = "";
+          subjectref.current.value = "";
+        })
+        .catch((_err) => {
+          alert("something went wrong please try again");
+        });
+    } catch (error) {
+      setSendLoading(false);
+      alert("something went wrong please try again");
+    }
+
+    // emailjs
+    //   .sendForm(
+    //     process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+    //     process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+    //     formref.current,
+    //     process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+    //   )
+    //   .then(
+    //     (nameref.current.value = ""),
+    //     (emailref.current.value = ""),
+    //     (messageref.current.value = ""),
+    //     (subjectref.current.value = "")
+    //   )
+    //   .then(alert("thank you, your message has been sent successfully"))
+    //   .catch((err) => alert("something went wrong try again"));
   };
   return (
     <>
@@ -87,7 +122,10 @@ const Contact = () => {
             <button type="submit" className={styles.button}>
               <span className={styles.button_lg}>
                 <span className={styles.button_sl}></span>
-                <p className={styles.button_text}>Send Message</p>
+                <p className={styles.button_text}>
+                  {sendLoading ? "Sending..." : "Send Message"}{" "}
+                  {sendLoading && <AiOutlineLoading style={{ marginLeft: "10px" }} className="rotating" />}
+                </p>
               </span>
             </button>
           </form>
