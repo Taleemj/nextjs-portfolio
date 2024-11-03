@@ -63,7 +63,11 @@
       justify-content: space-between;
       div {
         height: auto;
-        width: 35%;
+        width: 50%;
+        margin-bottom: 10px;
+        div {
+          width: 100%;
+        }
       }
     }
   }

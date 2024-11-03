@@ -28,40 +28,34 @@ const Aboutme = async () => {
       <>
         <strong>
           <h1 className="wow animate__animated animate__fadeInUp">
-            <RevealIt>
-              <AnimatedLetters wordArray={titlearr} idx={3} />
-            </RevealIt>
+            <AnimatedLetters wordArray={titlearr} idx={3} />
           </h1>
         </strong>
       </>
       <>
         <div className={styles.aboutcontainer}>
           <div className={styles.txt}>
-            <RevealIt>
-              <PortableText value={aboutstuff[0].bio} components={RichText} />
-            </RevealIt>
+            <PortableText value={aboutstuff[0].bio} components={RichText} />
+
             {/* <button className="wow animate__animated animate__fadeInUp">
               Download CV
             </button> */}
-            <RevealIt>
-              <button type="submit" className={styles.button} onClick={() => alert("currently unavailable")}>
-                <span className={styles.button_lg}>
-                  <span className={styles.button_sl}></span>
-                  <p className={styles.button_text}>Download CV</p>
-                </span>
-              </button>
-            </RevealIt>
+
+            <button type="submit" className={styles.button} onClick={() => alert("currently unavailable")}>
+              <span className={styles.button_lg}>
+                <span className={styles.button_sl}></span>
+                <p className={styles.button_text}>Download CV</p>
+              </span>
+            </button>
           </div>
           <div className={`wow animate__animated animate__fadeInUp ${styles.gif}`}>
-            <RevealIt>
-              <Image
-                src={urlForImage(aboutstuff[0].image).url()}
-                alt="taleemmankuer"
-                loading="lazy"
-                width={400}
-                height={300}
-              />
-            </RevealIt>
+            <Image
+              src={urlForImage(aboutstuff[0].image).url()}
+              alt="taleemmankuer"
+              loading="lazy"
+              width={400}
+              height={300}
+            />
           </div>
         </div>
       </>
